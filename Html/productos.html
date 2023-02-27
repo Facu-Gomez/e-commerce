@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programación I | Parcial 2 | APELLIDO/S</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+        
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="../estilos/estilo.css">
+        <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">PerifArg</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <div id="minicarrito">
+                <p id="item"><span>0</span> ítems agregados</p>
+                <p id="dinero">$<span>0</span> es el total</p>
+                <p>Filtrar por</p>
+
+                <select id="categorias">
+                    <option value="">Todos</option>
+                    <option value="Teclado">Teclado</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Auriculares">Auris</option>
+                </select>
+                
+                <button id="ver">Ver carrito</button>
+            </div>
+            <div id="promo">
+                <h2 id="promo-texto">TEXTO</h2>
+                <button id="proBtn">AGREGAR</button>
+            </div>
+            <h2>Productos</h2>
+            <!-- Generar el contenido del div#productos dinámicamente -->
+            <div id="productos">
+
+                <!-- <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div> -->
+              
+            </div>
+        </main>
+
+        <!-- Generar el div#modalCarrito y su contenido dinámicamente -->
+        <div class="modal" id="modalCarrito">
+            <div class="contenidoModal">
+                <span class="cerrar">❌</span>
+                <ul id="carritoLista"></ul>
+                <button id="vaciar">Vaciar</button>
+                <button id="avanzarCompra">Avanzar compra</button>
+            </div>
+        </div>
+        <div class="modal" id="datos">
+          <div class="contenidoModal">
+            <span class="cerrar">❌</span>
+            <ul id="compra">
+
+            </ul>
+            <form>
+                
+            </form> 
+          </div>
+        </div>
+
+        <footer></footer>
+
+
+        <script src="../JS/main.js"></script>
+        <script src="../bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>

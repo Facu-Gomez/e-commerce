@@ -1,0 +1,244 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.navbar a{
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+h2 {
+    margin-left: 1em;
+    padding-top: 1em;
+}
+
+#minicarrito {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 0 0;  
+    background-color: #000;
+}
+
+#item {
+    margin-left: 35px;
+}
+
+#categorias{
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#ver {
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+    padding: 1em;
+}
+
+.card{
+    margin: 50px;
+    background-color: #00825b !important;
+    color: #fff !important;
+    transition: .5s;
+}
+
+.card button {
+    width: 7rem;
+    height: 3rem;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.card:hover{
+    border: 4px solid #7b25f5;
+}
+
+#carritoLista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#promo {
+    width: 100%;
+    display: none;
+    background: rgb(0,130,91);
+    background: linear-gradient(98deg, rgba(0,130,91,1) 9%, rgba(0,0,0,1) 100%);
+}
+
+#promo-texto {
+    color: #fff;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.cerrar {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contenidoModal {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+}
+  
+.modal a {
+    text-decoration: none;
+    color: #d0e0e3;
+}
+
+.modal a.cerrar {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 1em;
+    right: 1em;
+    border-radius: 2.5em;
+    width: 5em;
+    height: 5em;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    color: #1a4a5e;
+    text-decoration: none;
+}
+
+.modal a.cerrar:hover {
+    background-color: #1a4a5e;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.modal img {
+    margin-top: -15px;
+    width: 100%;
+}
+
+.modal h3,
+.modal p,
+.modal li {
+    margin: 0;
+    text-align: center;
+    color: #d0e0e3; 
+}
+
+.modal li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px;
+    width: 90%;
+}
+
+.modal li span {
+    font-size: 1em;
+}
+
+#vaciar{
+    width: 100%;
+    height: 3rem;
+    border-radius: 20px;
+    transition: ease-in .4s;
+}
+
+#vaciar:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#avanzarCompra{
+    width: 100%;
+    margin-top: 20px;
+    height: 3rem;
+    border-radius: 20px;
+    transition: ease-in .4s;
+}
+
+#avanzarCompra:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+#compra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-control{
+    border: 2px solid #000;
+}
+
+#promo {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#proBtn {
+    width: 7rem;
+    height: 3rem;
+    border: 0px;
+    border-radius: 20px;
+}
+
+#proBtn:hover{
+    border: 4px solid #7b25f5;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
